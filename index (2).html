@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="button" id="button"> ADDMovie </a>
+    </div>
+    <div class="popup">
+      <div class="popup-content">
+        <table>
+          <tr>
+            <td><label>Movie name</label></td>
+            <td><input type="text" id="product" /></td>
+          </tr>
+          <tr>
+            <td><label>Price:</label></td>
+            <td><input type="number" id="price" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="file"
+                accept="image/*"
+                name="image"
+                id="file"
+                onchange="loadFile(event)"
+                style="display: none"
+              />
+              <label for="file" style="cursor: pointer">Upload Image</label>
+            </td>
+          </tr>
+        </table>
+        <div class="grid-container">
+          <div class="grid-item1">12.30</div>
+          <div class="grid-item2">01.00</div>
+        </div>
+        <div>
+          <p><img id="output"/></p>
+        </div>
+        <button id="vale1" onclick="func(event)">submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
